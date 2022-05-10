@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+    <link rel="stylesheet" href="../css/netflixlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZjk7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix | Login page</title>
+</head>
+<body>
+
+    <div class="showcase">
+        <div class="logo">
+            <a href="zoomhome.html"><img src="https://i.ibb.co/r5krrdz/logo.png" alt="netflix"></a>
+        </div>
+        
+        
+        <div class="form">
+            <form name="form1" action="" method="post">
+                <div class="container">
+                    <h1>Sign In</h1>
+        
+                    <div class="input-1">
+                        
+                        <input type="text" id="phone" name="formin" class="form__input" onkeyup="bolu(document.form1.formin)" autocomplete="off" placeholder=" ">
+                        <label for="email" class="form__label1">Email or phone number</label>
+                        <span id="tolu"></span>
+                    </div>
+                    <div class="input-2">
+                        
+                        <input type="password" name="formpass" id="solo" class="form__pass" onkeyup="volu(document.form1.formpass)" autocomplete="off" placeholder=" ">
+                        <label for="password" class="form__label2">Password</label>
+                        <span id="olu"></span>
+                    </div>
+        
+        
+        
+                    <button type="button" class="btn" onclick="bolu(document.form1.formin), volu(document.form1.formpass)" >Sign In</button>
+        
+                    <div class="helping">
+                        <div class="remember">
+                            <input type="checkbox" checked>
+                            <label for="" class="sublab">Remember me</label>
+                        </div>
+        
+                        <div class="help">
+                            <a href="">Need help?</a>
+                        </div>
+        
+                    </div>
+        
+                    <div class="fb">
+                        <img src="../netfliximages/loginfb.png" alt="facebook">
+        
+                        <a href="#" class="fblab">Login with Facebook</a>
+                    </div>
+        
+                    <div class="signup">
+                        New to Netflix? <a class="sbtn">Sign up now.</a>
+                    </div>
+        
+                    <div class="message">
+                        <span class="caveat">caveat: Please note, this page is a student project not the real Netflix.</span> <span class="menu" onclick="openSlideMenu()">view other pages.</span>
+                    </div>
+        
+                </div>
+        
+        
+            </form>
+        </div>
+        
+        
+        <footer class="footer">
+
+            <div class="container-2">
+                <h4>Questions? Contact us.</h4>
+                
+                <div class="grid-4">
+                    <div class="grid-col gridd">
+                        <div class="gri">
+                           <a href="#">FAQ</a> 
+                        </div>
+                        <div class="gri">
+                            <a href="#">Cookie Preferences</a>
+                        </div>
+                        
+                    </div>
+                    <div class="grid-col gridd">
+                        <div class="gri">
+                            <a href="#">Help Center</a>
+                        </div>
+                        <div class="gri">
+                            <a href="#">Corporate Information</a>
+                        </div>
+                        
+                    </div>
+                    <div class="grid-col">
+                        <a href="#">Terms of Use</a>
+                
+                    </div>
+                    <div class="grid-col">
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+
+    <div class="side-nav" id="side-menu">
+        <a href="#" class="menu-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="zoomhome.html">Home</a>
+        <button disabled="disabled" style="color: #747487; cursor:none;">Projects</button>
+        <p>Building apps is not supported on mobile or handheld devices</p>
+        <a href="netflixhome.html">Netflix Home</a>
+        <a href="netflixlogin.html">Netflix Login</a>
+        <a href="netflixdevices.html">Netlflix Devices</a>
+        <a href="necoresult.html">Neco</a>
+        <a href="zoomhome.html">Zoom Home</a>
+        <a href="zoomeducation.html">Zoom Education</a>
+        <a href="mycapital.html">My Capital</a>
+        <a href="zoommarket.html">Zoom MarketApp</a>
+    
+    
+    </div>
+    
+    <div id="main" onclick="closeSlideMenu()"></div>
+
+   
+    <script>
+
+        function bolu(inputtxt){
+
+            var x = /^[0-9]+$/;
+            var y = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if(inputtxt.value.match(y) || inputtxt.value.match(x) ){
+                document.getElementById("tolu").innerHTML = "<span style='color:#E87C03; font-size: 13px; padding-left: 2px;'></span>";
+                document.getElementById("phone").style = "";
+                return true;
+
+            }else{
+                document.getElementById("tolu").innerHTML = "<span style='color:#E87C03; font-size: 13px; padding-left: 2px;'>please enter a valid email or phone number.</span>";
+                document.getElementById("phone").style = "border-bottom: 3px solid #E87C03";
+                document.form1.formin.focus();
+                return false;
+            }
+        }
+
+
+        function volu(inputtxt){
+            var a = /^[a-zA-Z0-9!@#$%^&*]{4,20}$/;  
+
+            if(inputtxt.value.match(a)){
+                document.getElementById("olu").innerHTML = "<span style='color:#E87C03; font-size: 13px; padding-left: 2px;'></span>";
+                document.getElementById("solo").style = "";
+                return true;
+
+            }else{
+                document.getElementById("olu").innerHTML = "<span style='color:#E87C03; font-size: 13px; padding-left: 2px;'>Your password must contain between 4 and 20 characters.</span>";
+                document.getElementById("solo").style = "border-bottom: 3px solid #E87C03";
+                document.form1.formpass.focus();
+                return false;
+            }
+        }
+
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '100%';
+            document.getElementById('main').style.marginRight = '100%';
+            document.getElementById('main').style.display = 'block';
+        }
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginRight = '0';
+            document.getElementById('main').style.display = 'none';
+        }
+        function openModal() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginRight = '0';
+            document.getElementById('main').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

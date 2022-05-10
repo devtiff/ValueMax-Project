@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/zoommarket.css">
+    <title>App Marketplace</title>
+</head>
+<body>
+    
+    
+    <header class="header">
+        <div class="container">
+            <div class="head">
+                <div class="logo">
+                    <a href="zoomhome.html">
+                        <img src="../zoomimages/ZoomLogo_112b8a4.png" class="img-fluid" alt="" style="width: 80px;"><span>App Marketplace</span> 
+                    </a>
+                </div>
+                <div class="nav">
+                    <div class="form">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search a published app" id="">
+                    </div>
+                    <div class="nav-bar">
+                        <ul class="list">
+                            <li class="dropdown">
+                                <span>Develop <i class="fa-solid fa-chevron-down"></i></span>
+                                <ul class="dropbox">
+                    
+                                    <li><a href="netflixhome.html">Netflix Home</a></li>
+                                    <li><a href="mycapital.html">My Capital</a>
+                                    </li>
+                                    <div class="divider"></div>
+                                    <li><a href="necoresult.html">Neco result</a></li>
+                                    <li><a href="zoomhome.html">Zoom home</a></li>
+                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="netflixlogin.html">Sign in</a>
+                            </li>
+                            <li>
+                                <a class="btn-blue" href="netflixdevices.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                
+                <div class="hidden">
+                    <div class="search-col">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    
+                    <div class="nav-col" id="open-menu" >
+                        <i class="fa-solid fa-bars" onclick="openSlideMenu()"></i>
+                    </div>
+                </div>
+
+
+            </div>
+          
+        </div>
+    </header>
+
+
+    <section class="section-1">
+        <div class="contain">
+            <div class="showcase">
+                <div class="intro">
+                    <a href="https://marketplace.zoom.us/apps?category=zoomapp" class="tab-focus">
+                        <h2 class="">Introducing Zoom Apps,<br> a new type of integration</h2>
+                    </a>
+                    <p>Use the apps you love, right in Zoom. Explore available in-product apps
+                        below!</p>
+                    <a href="https://marketplace.zoom.us/apps?category=zoom-apps" class="tab-focus"
+                    style="color: #0e71eb; font-weight: 700;">View all Zoom Apps</a>
+                </div>
+                <div class="image">
+                    <img src="../zoomimages/showcase.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div class="contain">
+            <div class="section-grid">
+                <div class="cat">
+                    <h3>Categories</h3>
+                    <ul class="cat-list">
+                        <li class="cat-items">
+                            <button > All Categories</button>
+                        </li>
+                        <li class="cat-items"><button class="active"> Featured
+                            </button></li>
+                        <li class="cat-items"><button > Zoom Apps </button>
+                        </li>
+                        <li class="cat-items"><button > Analytics </button>
+                        </li>
+                        <li class="cat-items"><button > Archiving </button>
+                        </li>
+                        <li class="cat-items"><button > CRM </button></li>
+                        <li class="cat-items"><button > Carrier </button></li>
+                        <li class="cat-items"><button > Collaboration </button>
+                        </li>
+                        <li class="cat-items"><button > Customer Service
+                            </button></li>
+                        <li class="cat-items"><button > Education </button>
+                        </li>
+                        <li class="cat-items"><button > Event Management
+                            </button></li>
+                        <li class="cat-items"><button > Finance </button></li>
+                        <li class="cat-items"><button > Financial Services
+                            </button></li>
+                        <li class="cat-items"><button > Games </button></li>
+                        <li class="cat-items"><button > Healthcare </button>
+                        </li>
+                        <li class="cat-items"><button > Learning &amp;
+                                Development </button></li>
+                        <li class="cat-items"><button > Lifestyle </button>
+                        </li>
+                        <li class="cat-items"><button > Marketing </button>
+                        </li>
+                        <li class="cat-items"><button > Monitoring </button>
+                        </li>
+                        <li class="cat-items"><button > PeopleOps </button>
+                        </li>
+                        <li class="cat-items"><button > Productivity </button>
+                        </li>
+                        <li class="cat-items"><button > Recordings </button>
+                        </li>
+                        <li class="cat-items"><button > Sales </button></li>
+                        <li class="cat-items"><button > Scheduling </button>
+                        </li>
+                        <li class="cat-items"><button > Security &amp;
+                                Compliance </button></li>
+                        <li class="cat-items"><button > Telehealth </button>
+                        </li>
+                        <li class="cat-items"><button > Transcriptions
+                            </button></li>
+                    </ul>
+                    <div class="bottom-cat">
+                        <div class="horizontal-divider">
+                        </div>
+                        <h4>Works with</h4>
+                        <div class="check">
+                            <div>
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="ZOOM_MEETING">
+                                    </span>
+                                    <span>Zoom Meetings</span>
+                                </label>
+                            </div>
+                            <div >
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="ZOOM_WEBINAR">
+                                    </span>
+                                    <span>Zoom Webinars</span>
+                                </label>
+                            </div>
+                            <div >
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="ZOOM_ROOM">
+                                    </span>
+                                    <span>Zoom Rooms</span>
+                                </label>
+                            </div>
+                            <div >
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" aria-hidden="false"
+                                         class="el-checkbox__original" value="ZOOM_PHONE">
+                                    </span>
+                                    <span>Zoom Phone</span>
+                                </label>
+                            </div>
+                            <div >
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="ZOOM_CHAT">
+                                    </span>
+                                    <span>Zoom  Chat </span>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    
+                        <div class="horizontal-divider">
+                    
+                        </div>
+                        <div class="install">
+                            <div>
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="ADMIN_MANAGEMENT">
+                                    </span>
+                                    <span>Admin Installable </span>
+
+                                </label>
+                            </div>
+                            <div >
+                                <label class="label-name">
+                                    <span>
+                                        <span></span>
+                                        <input type="checkbox" value="USER_OPERATION">    
+                                           
+                                    </span>
+                                    <span>Member Installable </span>
+                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="feature">
+                    <h2>Featured</h2>
+                    <div class="box-grid">
+                        <div class="box">
+                            <a href="/apps/VG_p3Bb_TwWe_bgZmPUaXw" class="box-link">
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//XgIKAv2wQausbEiQUdcxXg/nhYXYiTzSYWf4mM3ZO4_dw/app/vYW9O0TIRP6HEXBue_jBYw/aeYqocK9SO-wztyqcSC4XQ.png"
+                                    alt="Google Workspace" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+                            
+                                <div class="box-text">
+                                    <h4>Google Workspace</h4>
+                                    <p>By Zoom</p>
+                                    <p>
+                                        Use Zoom to easily
+                                        schedule, join, manage, and customize ...
+                                    </p>
+                                    <div style="height: 21px;">
+                                        <span class="truncate">Meetings, Phone, C...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/apps/wstjUWFST7WGSHObVoA3EA" class="box-link">
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//S1fHmJ8TSMuzHAzN-kpAGg/nhYXYiTzSYWf4mM3ZO4_dw/app/ZSaLAI20TLqgDt6xbYbGyA/JJq0BGwGRCGqKu3RwR3cIQ.png"
+                                     alt="Slack" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+                                
+                                <div class="box-text">
+                                    <h4>Slack</h4>
+                                    <p>By Zoom</p>
+                                    <p>Bring together two
+                                        great solutions with Zoom and Slac...</p>
+                                    <div style="height: 21px;">
+                                        <div>
+                                            <span class="truncate">Meetings, Phone</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/apps/cy5FFKSBTlG4cBb3-qgQcg" class="box-link">
+
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//bp-jYbGvRS2omUzDtHXUyA/It8VIpaiQo23EIEikjOXyA/app/-VEbArbGSEW6jSTVWb1zXw/t6CvVlcyTs63fuV9zOFauQ.jpg"
+                                    alt="Wix" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+
+                                <div class="box-text">
+                                    <h4>Wix</h4>
+                                    <p>By Wix</p>
+                                    <p>Integrate Zoom into
+                                        your Wix website and take your busine...</p>
+                                    <div style="height: 21px;">
+                                        <div><span class="truncate">Meetings</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/apps/M8gb79vBRQ-3nqVKFuwMrg" class="box-link">
+
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//ZiAwr7WRQXOoaqDYvEnW6g/6mUXoqJtR2GIEcs-M4PDlQ/app/PN6jaRDPTFqD3VrFV-jr0Q/xdATSYHiQQi5utx7FEA-0A.png"
+                                    alt="Linkando" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+                                
+                                <div class="box-text">
+                                    <h4>Linkando</h4>
+                                    <p>By Linkando GmbH</p>
+                                    <p>This app adds an
+                                        interactive agenda, elections, vote...</p>
+                                    <div style="height: 21px;">
+                                        <div><span class="truncate">Meetings</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/apps/pjNPdTh7REiGf_uOEkhwTA" class="box-link">
+
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//h-0FCeRaQLOUPimfcY8PJQ/Pmhx_gxZTbWoQs1M0p5x8g/app/mBIb6V6zRVOo-z2eTnTUeQ/71JeM3wBROi8hJZ_dmYzKw.png"
+                                    alt="Affinity for Zoom" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+                                
+                                <div class="box-text">
+                                    <h4>Affinity for Zoom
+                                    </h4>
+                                    <p>By Affinity</p>
+                                    <p>Show up to meetings
+                                        smarter with the relationship...</p>
+                                    <div style="height: 21px;">
+                                        <div><span class="truncate">Meetings</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/apps/vgMXdcTdQOCYlFh-CtvV4Q" class="box-link">
+
+                                <div class="box-img">
+                                    <img src="https://marketplacecontent.zoom.us//6xtG0pgZTYuaZJbEk59MKw/YICPjC09QryR8xpwb_Eiow/app/K6Nn2zagSG6vIbOuGCH7gA/EjpV4Ql1Sm6avf36thDBaw.png"
+                                     alt="MeetingPulse for Zoom Desktop" style="width: 64px; height: 64px; border-radius: 16px;">
+                                </div>
+                                
+                                <div class="box-text">
+                                    <h4>MeetingPulse for Zoom
+                                        Desktop</h4>
+                                    <p>By InMoment Software,
+                                        LLC</p>
+                                    <p>MeetingPulse for Zoom
+                                        engages your meeting par...</p>
+                                    <div style="height: 21px;">
+                                        <div><span class="truncate">Meetings</span></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-section">
+        <div class="contain">
+            <div id="mobile-cat">
+                <h2 class="mob-head" id="modal">
+                    <span>View App Categories</span><i class="fa-solid fa-chevron-right" id="icon-hide"></i> 
+                    <i class="fa-solid fa-chevron-down" id="icon-show" style="display: none;"></i>
+                </h2>
+                <ul class="mob-list">
+                    <li><button class="mob-item"> All Categories </button>
+                    </li>
+                    <li><button class="mob-item active"> Featured
+                        </button></li>
+                    <li><button class="mob-item"> Zoom Apps </button></li>
+                    <li><button class="mob-item"> Analytics </button></li>
+                    <li><button class="mob-item"> Archiving </button></li>
+                    <li><button class="mob-item"> CRM </button></li>
+                    <li><button class="mob-item"> Carrier </button></li>
+                    <li><button class="mob-item"> Collaboration </button>
+                    </li>
+                    <li><button class="mob-item"> Customer Service </button>
+                    </li>
+                    <li><button class="mob-item"> Education </button></li>
+                    <li><button class="mob-item"> Event Management </button>
+                    </li>
+                    <li><button class="mob-item"> Finance </button></li>
+                    <li><button class="mob-item"> Financial Services
+                        </button></li>
+                    <li><button class="mob-item"> Games </button></li>
+                    <li><button class="mob-item"> Healthcare </button></li>
+                    <li><button class="mob-item"> Learning &amp; Development
+                        </button></li>
+                    <li><button class="mob-item"> Lifestyle </button></li>
+                    <li><button class="mob-item"> Marketing </button></li>
+                    <li><button class="mob-item"> Monitoring </button></li>
+                    <li><button class="mob-item"> PeopleOps </button></li>
+                    <li><button class="mob-item"> Productivity </button>
+                    </li>
+                    <li><button class="mob-item"> Recordings </button></li>
+                    <li><button class="mob-item"> Sales </button></li>
+                    <li><button class="mob-item"> Scheduling </button></li>
+                    <li><button class="mob-item"> Security &amp; Compliance
+                        </button></li>
+                    <li><button class="mob-item"> Telehealth </button></li>
+                    <li><button class="mob-item"> Transcriptions </button>
+                    </li>
+                    <li class="h-40"></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section  class="mobile-feat">
+        <div class="contain">
+            <div class="feature">
+                <h2>Featured</h2>
+
+                <div class="dropdown" id="drop" style="width: 75px;">
+                    
+                    <span>Show <i class="fas fa-chevron-down"></i></span>
+                    
+                    <ul class="dropbox" id="dropbox">
+                        <p>Works with:</p>
+                        <div class="sm-check">
+                            <li class="el-dropdown-menu__item">
+                                <label class="label-name">
+                                    <input type="checkbox" class="input-name" value="ZOOM_MEETING">
+                                    Zoom Meetings
+                                </label>
+                            </li>
+                            <li class="el-dropdown-menu__item">
+                                <label class="label-name">
+                                    <input type="checkbox" class="input-name" value="ZOOM_MEETING">
+                                    Zoom Webinars
+                                </label>
+                            </li>
+                            <li class="el-dropdown-menu__item">
+                                <label class="label-name">
+                                    <input type="checkbox" class="input-name" value="ZOOM_MEETING">
+                                   Zoom Rooms
+                                </label>
+                            </li>
+                            <li class="el-dropdown-menu__item">
+                                <label class="label-name">
+                                    <input type="checkbox" class="input-name" value="ZOOM_MEETING">
+                                   Zoom Phone
+                                </label>
+                            </li>
+                            <li class="el-dropdown-menu__item">
+                                <label class="label-name">
+                                    <input type="checkbox" class="input-name" value="ZOOM_MEETING">
+                                   Zoom Chat
+                                </label>
+                            </li>
+                        </div>
+
+                        <div class="divider">
+
+                        </div>
+                
+                        <div class="sm-install">
+                            <li tabindex="-1" class="el-dropdown-menu__item el-dropdown-menu__item--divided">
+                                <label class="label-name">
+                                    <input type="checkbox" aria-hidden="false" class="input-name" value="ADMIN_MANAGEMENT">
+                                    Admin Installable
+                                </label>
+                            </li>
+                            <li tabindex="-1" class="el-dropdown-menu__item el-dropdown-menu__item--divided">
+                                <label class="label-name">
+                                    <input type="checkbox" aria-hidden="false" class="input-name" value="ADMIN_MANAGEMENT">
+                                    Member Installable
+                                </label>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="box-grid">
+                    <div class="box">
+                        <a href="/apps/VG_p3Bb_TwWe_bgZmPUaXw" class="box-link">
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//XgIKAv2wQausbEiQUdcxXg/nhYXYiTzSYWf4mM3ZO4_dw/app/vYW9O0TIRP6HEXBue_jBYw/aeYqocK9SO-wztyqcSC4XQ.png"
+                                    alt="Google Workspace" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>Google Workspace</h4>
+                                <p>By Zoom</p>
+                                <p>Use Zoom to easily
+                                    schedule, join, manage, and customize ...
+                                </p>
+                                <div style="height: 21px;">
+                                    <span class="truncate">Meetings, Phone, Chat</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/apps/wstjUWFST7WGSHObVoA3EA" class="box-link">
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//S1fHmJ8TSMuzHAzN-kpAGg/nhYXYiTzSYWf4mM3ZO4_dw/app/ZSaLAI20TLqgDt6xbYbGyA/JJq0BGwGRCGqKu3RwR3cIQ.png"
+                                    alt="Slack" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>Slack</h4>
+                                <p>By Zoom</p>
+                                <p>Bring together two
+                                    great solutions with Zoom and Slac...</p>
+                                <div style="height: 21px;">
+                                    <div>
+                                        <span class="truncate">Meetings, Phone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/apps/cy5FFKSBTlG4cBb3-qgQcg" class="box-link">
+            
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//bp-jYbGvRS2omUzDtHXUyA/It8VIpaiQo23EIEikjOXyA/app/-VEbArbGSEW6jSTVWb1zXw/t6CvVlcyTs63fuV9zOFauQ.jpg"
+                                    alt="Wix" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>Wix</h4>
+                                <p>By Wix</p>
+                                <p>Integrate Zoom into
+                                    your Wix website and take your busine...</p>
+                                <div style="height: 21px;">
+                                    <div><span class="truncate">Meetings</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/apps/M8gb79vBRQ-3nqVKFuwMrg" class="box-link">
+            
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//ZiAwr7WRQXOoaqDYvEnW6g/6mUXoqJtR2GIEcs-M4PDlQ/app/PN6jaRDPTFqD3VrFV-jr0Q/xdATSYHiQQi5utx7FEA-0A.png"
+                                    alt="Linkando" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>Linkando</h4>
+                                <p>By Linkando GmbH</p>
+                                <p>This app adds an
+                                    interactive agenda, elections, vote...</p>
+                                <div style="height: 21px;">
+                                    <div><span class="truncate">Meetings</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/apps/pjNPdTh7REiGf_uOEkhwTA" class="box-link">
+            
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//h-0FCeRaQLOUPimfcY8PJQ/Pmhx_gxZTbWoQs1M0p5x8g/app/mBIb6V6zRVOo-z2eTnTUeQ/71JeM3wBROi8hJZ_dmYzKw.png"
+                                    alt="Affinity for Zoom" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>Affinity for Zoom
+                                </h4>
+                                <p>By Affinity</p>
+                                <p>Show up to meetings
+                                    smarter with the relationship...</p>
+                                <div style="height: 21px;">
+                                    <div><span class="truncate">Meetings</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="/apps/vgMXdcTdQOCYlFh-CtvV4Q" class="box-link">
+            
+                            <div class="box-img">
+                                <img src="https://marketplacecontent.zoom.us//6xtG0pgZTYuaZJbEk59MKw/YICPjC09QryR8xpwb_Eiow/app/K6Nn2zagSG6vIbOuGCH7gA/EjpV4Ql1Sm6avf36thDBaw.png"
+                                    alt="MeetingPulse for Zoom Desktop" style="width: 64px; height: 64px; border-radius: 16px;">
+                            </div>
+            
+                            <div class="box-text">
+                                <h4>MeetingPulse for Zoom
+                                    Desktop</h4>
+                                <p>By InMoment Software,
+                                    LLC</p>
+                                <p>MeetingPulse for Zoom
+                                    engages your meeting par...</p>
+                                <div style="height: 21px;">
+                                    <div><span class="truncate">Meetings</span></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="contain">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="../html/zoommarket.html">
+                        <img src="../zoomimages/logo.svg" alt="Zoom App Marketplace">
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <div class="foot-grid">
+            
+                        <dl class="foot-list">
+                            <dt><a href="https://zoom.us/about" target="_blank" rel="noopener noreferrer"
+                                    class="foot-big"> About </a></dt>
+                            <dd class="foot-bottom">
+                                <ul>
+                                    <li><a href="http://blog.zoom.us/" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Zoom Blog
+                                        </a></li>
+                                    <li><a href="https://zoom.us/customer/all" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Customers
+                                        </a></li>
+                                    <li><a href="https://zoom.us/team" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Our Team
+                                        </a></li>
+                                    <li><a href="https://zoom.us/zoomisbetter" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Why Zoom
+                                        </a></li>
+                                    <li><a href="https://zoom.us/feature" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Features
+                                        </a></li>
+                                    <li><a href="https://zoom.us/careers" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Careers
+                                        </a></li>
+                                    <li><a href="https://zoom.us/integrations" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list">
+                                            Integrations </a></li>
+                                    <li><a href="https://zoom.us/partners" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Partners
+                                        </a></li>
+                                    <li><a href="https://zoom.us/resources" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Resources
+                                        </a></li>
+                                    <li><a href="https://zoom.us/press" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Press </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="foot-list">
+                            <dt><a href="https://zoom.us/download" target="_blank" rel="noopener noreferrer"
+                                    class="foot-big"> Download </a></dt>
+                            <dd class="foot-bottom">
+                                <ul>
+                                    <li><a href="https://zoom.us/download#client_4meeting" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Meetings
+                                            Client </a></li>
+                                    <li><a href="https://zoom.us/download#room_client" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Zoom Rooms
+                                            Client </a></li>
+                                    <li><a href="https://zoom.us/download#chrome_ext" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Browser
+                                            Extension </a></li>
+                                    <li><a href="https://zoom.us/download#outlook_plugin" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Outlook
+                                            Plug-in </a></li>
+                                    <li><a href="https://zoom.us/download#lync_plugin" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Lync
+                                            Plug-in </a></li>
+                                    <li><a href="https://zoom.us/download#client_iphone" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> iPhone/iPad
+                                            App </a></li>
+                                    <li><a href="https://zoom.us/download#mobile_app" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Android App
+                                        </a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="foot-list">
+                            <dt><a href="https://zoom.us/contactsales" target="_blank" rel="noopener noreferrer"
+                                    class="foot-big"> Sales </a></dt>
+                            <dd class="foot-bottom">
+                                <ul>
+                                    <li><a href="tel:18887999666" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> 1 888 799
+                                            9666 </a></li>
+                                    <li><a href="https://zoom.us/contactsales" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Contact
+                                            Sales </a></li>
+                                    <li><a href="https://zoom.us/pricing" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Plans &amp;
+                                            Pricing </a></li>
+                                    <li><a href="https://zoom.us/livedemo" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Request a
+                                            Demo </a></li>
+                                    <li><a href="https://zoom.us/events" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Webinars
+                                            and Events </a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="foot-list">
+                            <dt><a href="http://support.zoom.us/" target="_blank" rel="noopener noreferrer"
+                                    class="foot-big"> Support </a></dt>
+                            <dd class="foot-bottom">
+                                <ul>
+                                    <li><a href="https://zoom.us/test" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Test Zoom
+                                        </a></li>
+                                    <li><a href="https://zoom.us/account" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Account
+                                        </a></li>
+                                    <li><a href="http://support.zoom.us/" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Support
+                                            Center </a></li>
+                                    <li><a href="https://zoom.us/livetraining" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Live
+                                            Training </a></li>
+                                    <li><a href="https://zoom.us/feed" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Feedback
+                                        </a></li>
+                                    <li><a href="https://zoom.us/contact" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list"> Contact Us
+                                        </a></li>
+                                    <li><a href="https://zoom.us/accessibility" target="_blank" rel="noopener noreferrer"
+                                            class="bottom-list">
+                                            Accessibility </a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+            
+                    </div>
+            
+                    <div class="option">
+                        <div class="option-1"><span>Language:</span>
+                            <div class="option-2">
+                                <span class="bottom-drop"> English <i class="fa-solid fa-chevron-down"></i></span>
+
+                                <ul class="bottom-down" id="bottom-down" style="display: none;">
+                                    <li tabindex="-1" class="">
+                                        English
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="img-list">
+                            <li class="img-item"><a href="http://www.linkedin.com/company/2532259" target="_blank"
+                                    rel="noopener noreferrer" class="img-link"><img
+                                        src="https://marketplacefront.zoom.us/marketplace_assets/linkin_logo.png" width="20"
+                                        height="20" alt="LinkedIn"></a></li>
+                            <li class="img-item"><a href="http://www.twitter.com/zoom_us" target="_blank"
+                                    rel="noopener noreferrer" class="img-link"><img
+                                        src="https://marketplacefront.zoom.us/marketplace_assets/twitter_logo.png" width="20"
+                                        height="20" alt="Twitter"></a></li>
+                            <li class="img-item"><a href="http://www.youtube.com/zoommeetings" target="_blank"
+                                    rel="noopener noreferrer" class="img-link"><img
+                                        src="https://marketplacefront.zoom.us/marketplace_assets/youtube_logo.png" width="20"
+                                        height="20" alt="Youtube"></a></li>
+                            <li class="img-item"><a href="http://www.facebook.com/zoomvideocommunications"
+                                    target="_blank" rel="noopener noreferrer" class="img-link"><img
+                                        src="https://marketplacefront.zoom.us/marketplace_assets/facebook_logo.png" width="20"
+                                        height="20" alt="Facebook"></a></li>
+                            <li class="img-item"><a href="http://blog.zoom.us/" target="_blank"
+                                    rel="noopener noreferrer" class="img-link"><img
+                                        src="https://marketplacefront.zoom.us/marketplace_assets/blog_logo.png" width="20"
+                                        height="20" alt="Blog"></a></li>
+                        </ul>
+            
+                    </div>
+                    <div class="copy">
+                        <div class="copyright">
+                            <span>Copyright ©2022 Zoom Video Communications,
+                                Inc. All rights reserved.</span>
+                            <a href="https://zoom.us/privacy" target="_blank" rel="noopener noreferrer">
+                                 Privacy Policy 
+                            </a>
+                            <span>·</span>
+                            <a  href="https://zoom.us/terms" target="_blank" rel="noopener noreferrer"> 
+                                Terms 
+                            </a>
+                            <span tabindex="0" id="ot-do-not-sell" style="color: red; font-size: 22px;">caveat: This is a student project not the original website </span> <span>|</span> 
+                            <a tabindex="0"> Cookies Setting</a>
+                               
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+       
+    </footer>
+
+
+    <div class="side-nav" id="side-menu">
+        <a href="#" class="menu-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="zoomhome.html">Home</a>
+        <button disabled="disabled" style="color: #747487; cursor:none;">Projects</button>
+        <p>Building apps is not supported on mobile or handheld devices</p>
+        <a href="netflixhome.html">Netflix Home</a>
+        <a href="netflixlogin.html">Netflix Login</a>
+        <a href="netflixdevices.html">Netlflix Devices</a>
+        <a href="necoresult.html">Neco</a>
+        <a href="zoomhome.html">Zoom Home</a>
+        <a href="zoomeducation.html">Zoom Education</a>
+        <a href="mycapital.html">My Capital</a>
+        <a href="zoommarket.html">Zoom MarketApp</a>
+
+        <div class="menu-btn">
+            <a href="#" class="btn-side"></a>
+            <a href="#" class="btn-side blue-side"></a>
+        </div>
+
+    </div>
+
+    <div id="main" onclick="closeSlideMenu()"></div>
+
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width = '300px';
+            document.getElementById('main').style.marginRight = '300px';
+            document.getElementById('main').style.display = 'block';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginRight = '0';
+            document.getElementById('main').style.display = 'none';
+        }
+        function openModal(){
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginRight = '0';
+            document.getElementById('main').style.display = 'none';
+        }
+    </script>
+   
+</body>
+</html>
